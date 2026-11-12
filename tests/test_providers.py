@@ -57,7 +57,7 @@ class OfflineProviderTest(unittest.TestCase):
             text = json.dumps(s)
             self.assertNotIn("best bottle ever", text)
             self.assertNotIn("48 hours", text)
-            self.assertNotIn("HydroPeak", text)
+            self.assertNotIn("RivalFlaskCo", text)
             self.assertIn("Tap the link to get yours.", s["beats"][-1]["say"])
 
     def test_labeled_offline_and_free(self):

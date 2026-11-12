@@ -253,7 +253,7 @@ def _apply_script_flaw(flaw: str, beats: list[dict], caption: str, v: dict) -> t
     elif flaw == "CTA_MISSING":
         b[3]["say"] = "Check it out."
     elif flaw == "COMPETITOR_NAME":
-        b[2]["say"] += " Way better than my old HydroPeak."
+        b[2]["say"] += " Way better than my old RivalFlaskCo."
     elif flaw == "BRAND_SPELLING":
         b[2]["say"] = b[2]["say"].replace(v["brand"], "FernWay")
     elif flaw == "FORBIDDEN_WORD":

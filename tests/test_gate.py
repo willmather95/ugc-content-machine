@@ -124,7 +124,7 @@ class BrandRulesTest(unittest.TestCase):
         self.assertIn("FORBIDDEN_WORD", check(script=with_say(2, "Not some cheap knockoff.")).codes)
 
     def test_competitor_name(self):
-        self.assertIn("COMPETITOR_NAME", check(script=with_say(2, "Way better than my old HydroPeak.")).codes)
+        self.assertIn("COMPETITOR_NAME", check(script=with_say(2, "Way better than my old RivalFlaskCo.")).codes)
 
 
 class ReadabilityTest(unittest.TestCase):

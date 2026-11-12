@@ -12,7 +12,7 @@
     "required_words": ["Fernway"],
     "spelling": {"FernWay": "Fernway", "Fern way": "Fernway", "Fernaway": "Fernway"},
     "forbidden_words": ["cheap", "knockoff", "dupe"],
-    "competitors": ["HydroPeak", "AquaMax"]
+    "competitors": ["RivalFlaskCo", "OtherJugCo"]
   },
   "goal": "Low-price buy from the product page",
   "cta": "Tap the link to get yours",
