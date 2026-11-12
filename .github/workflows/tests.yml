@@ -1,0 +1,28 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+        pillow: ["with", "without"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install Pillow (optional dependency)
+        if: matrix.pillow == 'with'
+        run: pip install "pillow>=10.1"
+      - name: Unit tests (offline, no secrets)
+        run: python -m unittest discover -s tests -t . -v
+      - name: Demo runs end to end
+        run: python -m ugcm demo --out out
