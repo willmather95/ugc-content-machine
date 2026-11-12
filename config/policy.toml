@@ -1,0 +1,63 @@
+# Quality gate policy. Every hard rule has a code so a failed ad can say exactly why.
+# Change a number here, not in Python. Version this file with the brief.
+
+version = "policy-2026.11.1"
+
+[speech]
+words_per_second = 2.6        # normal short-form voiceover pace
+
+[hook]
+max_words = 10
+max_seconds = 3.0             # the hook must land inside the first 2 to 3 seconds
+min_words = 3
+words_per_second = 3.6        # hooks are read punchier than the body
+
+[first_frame]
+# Frame one is the thumbnail on most feeds. It must show the payoff or a face, never a blank frame.
+must_mention_any = ["bottle", "face", "cap", "hand", "trail", "summit", "pack"]
+blank_words = ["black", "blank", "empty frame", "fade in", "logo only"]
+
+[script]
+min_seconds = 15
+max_seconds = 35
+max_grade = 8.0               # Flesch-Kincaid grade, spoken copy only
+cta_in_last_beat = true
+
+[caption]
+max_hashtags = 5
+# Caption length caps per surface (characters). Shorts uses the title field.
+max_chars = { tiktok = 2200, reels = 2200, shorts = 100 }
+
+[claims]
+# A sentence that looks like a claim must match an approved claim word for word.
+trigger_patterns = [
+  '\b\d+(\.\d+)?\s?(hours?|hrs?|ml|grams?|g|oz|days?|%|percent)\b',
+  '\b(keeps?|holds?|weighs?|lasts|proven|clinically|guarantee[sd]?)\b',
+]
+
+banned_patterns = [
+  '\bcures?\b',
+  '\bdetox(es|ing)?\b',
+  '\bburns? (fat|calories)\b',
+  '\blose \d+ ?(lbs?|pounds|kg)\b',
+  '\bguarantee[sd]?\b',
+  '\bclinically (proven|tested)\b',
+  '\bdoctors? recommend(ed)?\b',
+  '\bbest bottle ever\b',
+  '(^|\s)#1\b',
+  '\brisk[- ]free\b',
+]
+
+[disclosure]
+ai_label_tag = "#AIgenerated"
+paid_tags = ["#ad"]
+affiliate_line = "I earn a commission if you buy."
+# An AI person may never imply a real customer, a real result or a real review.
+testimonial_patterns = ['\bmy (customer|client)s?\b', '\breal (customer|review|results?)\b', '\b5[- ]star review\b', '\bverified buyer\b']
+
+[rubric]
+pass_score = 70
+max_regenerations = 2
+# Weights sum to 100.
+weights = { hook = 30, clarity = 20, proof = 20, cta = 15, pacing = 15 }
+curiosity_markers = ["why", "nobody", "stop", "wait", "this", "secret", "never", "pov", "myth"]

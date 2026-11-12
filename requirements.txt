@@ -1,0 +1,1 @@
+pillow>=10.1   # optional: PNG thumbnails and contact sheet. Without it, SVG versions are still written.

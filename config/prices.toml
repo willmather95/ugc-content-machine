@@ -1,0 +1,67 @@
+# Unit price book for the cost estimator.
+#
+#   !!! PLACEHOLDER PRICES. VERIFY BEFORE USE. !!!
+#
+# None of these numbers were checked against a live price list. They are round, plausible
+# placeholders so the estimator has something to multiply. Before any paid run, look up the
+# current price for each model on its provider's page (or the pay-per-call catalog's
+# catalog_get), update this file, set verified = true and fill in verified_on + source.
+# The CLI prints a loud warning on every estimate while verified = false.
+
+verified = false
+verified_on = ""
+source = "placeholder"
+currency = "USD"
+
+[contingency]
+# Expected extra video draft re-rolls per published asset (a human rejects a take).
+video_reroll_rate = 0.35
+# Buffer added on top of the subtotal for retries, failed jobs and rounding.
+buffer_pct = 10
+
+[cap]
+# Hard ceiling for one cohort, whatever the estimate says.
+max_cohort_usd = 250.00
+
+# One block per model. route is where the call would go (first-party first, catalog second).
+[models.video-draft]
+label = "Video, fast draft tier (Veo 3.1 Fast class)"
+route = "treg"
+tool_id = "video.veo-3-1-fast"
+unit = "second"
+usd_per_unit = 0.15
+
+[models.video-quality]
+label = "Video, quality tier (Veo 3.1 class)"
+route = "treg"
+tool_id = "video.veo-3-1"
+unit = "second"
+usd_per_unit = 0.40
+
+[models.thumb-image]
+label = "First-frame still (Gemini Image class)"
+route = "treg"
+tool_id = "image.gemini-image"
+unit = "image"
+usd_per_unit = 0.04
+
+[models.voice]
+label = "Voiceover TTS"
+route = "treg"
+tool_id = "voice.tts-standard"
+unit = "1k_chars"
+usd_per_unit = 0.30
+
+[models.llm-text]
+label = "Script LLM (hooks + scripts + regenerations)"
+route = "first-party"
+tool_id = "llm.text"
+unit = "1m_tokens_blended"
+usd_per_unit = 6.00
+
+[models.offline]
+label = "Deterministic offline provider (templated, seeded)"
+route = "local"
+tool_id = "local.offline"
+unit = "call"
+usd_per_unit = 0.00

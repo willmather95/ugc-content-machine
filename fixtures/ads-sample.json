@@ -1,0 +1,172 @@
+[
+ {
+  "ad_id": "AD-001",
+  "format_id": "pov-fix",
+  "angle_id": "forget",
+  "emotion": "curiosity",
+  "hook": "Fixture hook 1",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-002",
+  "format_id": "pov-fix",
+  "angle_id": "cold",
+  "emotion": "relief",
+  "hook": "Fixture hook 2",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-003",
+  "format_id": "pov-fix",
+  "angle_id": "light",
+  "emotion": "humor",
+  "hook": "Fixture hook 3",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-004",
+  "format_id": "pov-fix",
+  "angle_id": "glow",
+  "emotion": "status",
+  "hook": "Fixture hook 4",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-005",
+  "format_id": "pov-fix",
+  "angle_id": "returns",
+  "emotion": "fomo",
+  "hook": "Fixture hook 5",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-006",
+  "format_id": "pov-fix",
+  "angle_id": "forget",
+  "emotion": "curiosity",
+  "hook": "Fixture hook 6",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-007",
+  "format_id": "myth-fact",
+  "angle_id": "cold",
+  "emotion": "relief",
+  "hook": "Fixture hook 7",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-008",
+  "format_id": "myth-fact",
+  "angle_id": "light",
+  "emotion": "humor",
+  "hook": "Fixture hook 8",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-009",
+  "format_id": "myth-fact",
+  "angle_id": "glow",
+  "emotion": "status",
+  "hook": "Fixture hook 9",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-010",
+  "format_id": "myth-fact",
+  "angle_id": "returns",
+  "emotion": "fomo",
+  "hook": "Fixture hook 10",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-011",
+  "format_id": "myth-fact",
+  "angle_id": "forget",
+  "emotion": "curiosity",
+  "hook": "Fixture hook 11",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-012",
+  "format_id": "myth-fact",
+  "angle_id": "cold",
+  "emotion": "relief",
+  "hook": "Fixture hook 12",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-013",
+  "format_id": "three-things",
+  "angle_id": "light",
+  "emotion": "humor",
+  "hook": "Fixture hook 13",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-014",
+  "format_id": "three-things",
+  "angle_id": "glow",
+  "emotion": "status",
+  "hook": "Fixture hook 14",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-015",
+  "format_id": "three-things",
+  "angle_id": "returns",
+  "emotion": "fomo",
+  "hook": "Fixture hook 15",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-016",
+  "format_id": "three-things",
+  "angle_id": "forget",
+  "emotion": "curiosity",
+  "hook": "Fixture hook 16",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ },
+ {
+  "ad_id": "AD-017",
+  "format_id": "three-things",
+  "angle_id": "cold",
+  "emotion": "relief",
+  "hook": "Fixture hook 17",
+  "seconds": 24.0,
+  "status": "passed",
+  "final_score": 94
+ }
+]

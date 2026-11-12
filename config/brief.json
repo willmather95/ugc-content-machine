@@ -1,0 +1,61 @@
+{
+  "cohort_id": "cohort-001",
+  "as_of": "2026-11-12",
+  "seed": 95,
+  "cohort_size": 30,
+  "note": "Fernway is a made-up brand. Every claim, price and URL below is fictional and exists only to drive the demo.",
+  "brand": {
+    "name": "Fernway",
+    "product": "Fernway Trail Bottle",
+    "price_usd": 39,
+    "url": "fernway.example/trail",
+    "required_words": ["Fernway"],
+    "spelling": {"FernWay": "Fernway", "Fern way": "Fernway", "Fernaway": "Fernway"},
+    "forbidden_words": ["cheap", "knockoff", "dupe"],
+    "competitors": ["HydroPeak", "AquaMax"]
+  },
+  "goal": "Low-price buy from the product page",
+  "cta": "Tap the link to get yours",
+  "audience": "Day hikers who forget to drink on the trail",
+  "approved_claims": [
+    "Keeps water cold for 24 hours.",
+    "Holds 750 ml.",
+    "The cap glows when it is time to drink.",
+    "Weighs 310 grams empty.",
+    "Free returns for 30 days."
+  ],
+  "disclosure": {
+    "ai_label": true,
+    "paid_partnership": false,
+    "affiliate": false
+  },
+  "fit": {
+    "conversion_within_few_taps": true,
+    "payoff_on_screen_under_3s": true,
+    "ten_videos_a_week_without_new_spend": true,
+    "category_allowed_in_branded_content": true,
+    "free_conversion_tracking": true
+  },
+  "targets": {
+    "_rule": "Written before launch. Do not move them afterward.",
+    "views_floor": 900,
+    "conversions_per_1k_views_target": 0.8,
+    "min_posts_before_format_kill": 10
+  },
+  "formats": [
+    {"id": "pov-fix", "name": "POV problem, then fix", "beats": "POV line on a real trail moment, then the bottle solves it"},
+    {"id": "myth-fact", "name": "Myth vs. fact", "beats": "State a common hiking myth, then the plain fact with the bottle on screen"},
+    {"id": "three-things", "name": "3 things in my day pack", "beats": "Quick pack-out of 3 items, the bottle is the last and best one"}
+  ],
+  "angles": [
+    {"id": "forget", "name": "I forget to drink", "weight": 1.0},
+    {"id": "cold", "name": "Still cold at the top", "weight": 1.0},
+    {"id": "light", "name": "Light enough to forget", "weight": 1.0},
+    {"id": "glow", "name": "The cap that reminds you", "weight": 1.0},
+    {"id": "returns", "name": "Try it, return it free", "weight": 1.0}
+  ],
+  "emotions": ["curiosity", "relief", "humor", "status", "fomo"],
+  "platforms": ["tiktok", "reels", "shorts"],
+  "length_s": [15, 35],
+  "aspect": "9:16"
+}

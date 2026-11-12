@@ -1,0 +1,22 @@
+[project]
+name = "ugc-content-machine"
+version = "0.1.0"
+description = "A spend-safe, ledgered 30-ad UGC cohort pipeline: brief, hooks, scripts, quality gate, cost estimate, generation, ledger, feedback."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Will Mather" }]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+images = ["pillow>=10.1"]
+
+[project.scripts]
+ugcm = "ugcm.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ugcm", "ugcm.providers", "ugcm.generation"]
